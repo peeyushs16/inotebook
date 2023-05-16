@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.send('Hello World, welcome to inotebook!')
 })
 
-app.use('/api/createUser', require('./routes/auth.js'))
+app.use('/api/', require('./routes/auth.js'))
 // app.use('/api/notes', require('./routes/notes.js'))
 
 app.listen(port, () => {
